@@ -1,0 +1,17 @@
+# Template file for 'wttrbar'
+pkgname=wttrbar
+version=0.10.7
+revision=1
+build_style=cargo
+hostmakedepends="pkg-config"
+short_desc="Custom module for showing the weather in Waybar, using the great wttr.in"
+maintainer="bitterhalt <bthalt@disroot.org>"
+license="MIT"
+homepage="https://github.com/bjesus/wttrbar"
+changelog="https://github.com/bjesus/wttrbar/releases/"
+distfiles="https://github.com/bjesus/wttrbar/archive/refs/tags/${version}.tar.gz"
+checksum=f630fff25a02fa95aa5c1a1ac4bd2912b9dedf2c6e8ec192035621d5eaaff89b
+
+do_install() {
+	vlicense LICENSE
+}
